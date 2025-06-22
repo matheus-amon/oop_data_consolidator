@@ -1,6 +1,5 @@
 import os
 import polars as pl
-import sqlite3
 from .files_source import FilesDataSource
 
 class CsvSource(FilesDataSource):
