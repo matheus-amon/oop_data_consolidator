@@ -31,7 +31,6 @@ class CsvSource(FilesDataSource):
                 print("An error occurred while reading the CSV file:", e)
         if data_frames:
             self.combined_data = pl.concat(data_frames)
-            print(self.combined_data)
             return self.combined_data
         else:
             return None
